@@ -6,8 +6,8 @@ channels:
 dependencies:
 - pip
 - idr-py
-- scikit-image=0.17.*
-- scikit-learn=0.23.*
+- scikit-image
+- scikit-learn
 - bokeh=2.2.*
 - ipywidgets
 - matplotlib
