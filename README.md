@@ -70,9 +70,3 @@ Depending on the permissions, you might have to run the command as an admin
 | **[Rohn Phenotype Clustering](RohnPhenotypeClustering.ipynb)**             | Py       | Study details | Downloads annotations from idr0008-rohn-actinome, and performs some simple phenotypic clustering, building a figure, similar to Fig. 1 of the corresponding paper. Builds a gallery of thumbnails from images of several phenotypes.                                                                                                                                                                               |
 | **[Sysgro ROI Length](SysgroRoiLength.ipynb)**                             | Py       | Study details | Loads polygons which are linked to the images of idr0001-graml-sysgro and compares the length of cells labelled with a particular gene such as ASH2 versus the wild type.                                                                                                                                                                                                                                          |
 | **[Calculate Sharpness](CalculateSharpness.ipynb)**                        | Py       | Example       | Calculates sharpness of images and generates heatmaps.                                                                                                                                                                                                                                                                                                                                                             |
-
-----
-
-<a name="footnote1">1</a>: Available on bioRxiv under https://doi.org/10.1101/089359
-
-<a name="footnote2">2</a>: If you don't yet have [an account](Using_Jupyter.ipynb), notebooks can be viewed under https://github.com/IDR/idr-metadata or more completely under https://nbviewer.jupyter.org/github/idr/idr-notebooks/tree/master/
