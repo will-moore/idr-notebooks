@@ -43,22 +43,6 @@ The following steps are only required if you want to run the notebooks
   * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``idr_env`` kernel or ``[conda env:idr_env]`` according to what is available
 
 
-### Running in Docker
-**NOTE**: At the moment, running in Docker (using repo2docker) does not work.
-Please use the Google Colab workflow (see above).
-
-Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
-tool to run this repository as a local Docker instance:
-
-
-    $ git clone https://github.com/IDR/idr-notebooks
-    $ cd idr-notebooks
-    $ repo2docker .
-
-Then follow the instructions that are printed after the Docker image is built.
-Depending on the permissions, you might have to run the command as an admin
-
-
 | **Notebook**                                                               | **Lang** | **Level**     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------|----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **[Using Jupyter](Using_Jupyter.ipynb)**                                   | Markdown | Intro         | Getting a login account                                                                                                                                                                                                                                                                                                                                                                                            |
