@@ -10,27 +10,14 @@ Full access to IDR metadata and images is provided through the standard OMERO AP
 ## Running the notebooks
 
 ### Running on cloud resources
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IDR/idr-notebooks/master)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IDR/idr-notebooks/)
-
-### Running in Docker
-
-
-Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
-tool to run this repository as a local Docker instance:
-
-
-    $ git clone https://github.com/IDR/idr-notebooks
-    $ cd idr-notebooks
-    $ repo2docker .
-
-Then follow the instructions that are printed after the Docker image is built.
-Depending on the permissions, you might have to run the command as an admin
 
 
 ### Running locally
+**NOTE**: At the moment, running locally does not work.
+Please use the Google Colab workflow (see above).
 
-Finally, if you would like to install the necessary requirements locally,
+If you would like to install the necessary requirements locally,
 we suggest using conda:
 
 You can for example install Anaconda https://www.anaconda.com/products/individual#Downloads
@@ -54,6 +41,22 @@ The following steps are only required if you want to run the notebooks
   * In the environment, install ``jupyter`` e.g. ``pip install jupyter``
   * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "idr_env" --user``
   * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``idr_env`` kernel or ``[conda env:idr_env]`` according to what is available
+
+
+### Running in Docker
+**NOTE**: At the moment, running in Docker (using repo2docker) does not work.
+Please use the Google Colab workflow (see above).
+
+Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
+tool to run this repository as a local Docker instance:
+
+
+    $ git clone https://github.com/IDR/idr-notebooks
+    $ cd idr-notebooks
+    $ repo2docker .
+
+Then follow the instructions that are printed after the Docker image is built.
+Depending on the permissions, you might have to run the command as an admin
 
 
 | **Notebook**                                                               | **Lang** | **Level**     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                    |
