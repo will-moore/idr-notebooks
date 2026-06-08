@@ -4,11 +4,14 @@ channels:
 - defaults
 - ome
 dependencies:
+- aiohttp
+- dask
 - pip
 - idr-py
 - scikit-image
 - scikit-learn
 - bokeh=2.2.*
+- fsspec
 - ipywidgets
 - matplotlib
 - numpy
@@ -17,3 +20,4 @@ dependencies:
 - tifffile
 - jupyter_contrib_nbextensions
 - intermine
+- zarr
