@@ -1,5 +1,3 @@
-
-[![Actions Status](https://github.com/IDR/idr-notebooks/workflows/repo2docker/badge.svg)](https://github.com/ome/idr-notebooks/actions)
 # idr-notebooks
 
 A set of Python Notebooks to demonstrate how to access the images and metadata from the [Image Data Resource (IDR)](https://idr.openmicroscopy.org), including the features and all of the descriptive tags.
