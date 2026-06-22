@@ -1,36 +1,21 @@
-
-[![Actions Status](https://github.com/IDR/idr-notebooks/workflows/repo2docker/badge.svg)](https://github.com/ome/idr-notebooks/actions)
 # idr-notebooks
 
 A set of Python Notebooks to demonstrate how to access the images and metadata from the [Image Data Resource (IDR)](https://idr.openmicroscopy.org), including the features and all of the descriptive tags.
 
-Full access to IDR metadata and images is provided through the standard OMERO API, documentation for which can be found [here](https://docs.openmicroscopy.org/latest/omero5.4/developers/index.html), with the Python bindings found specifically [here](https://docs.openmicroscopy.org/latest/omero5.4/developers/Python.html). The notebooks in this repository are meant to exemplify the use of that API in the context of the IDR, and the sort of queries that can be done. In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup> They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
+Full access to IDR metadata and images is provided through the standard OMERO API, documentation for which can be found [here](https://omero.readthedocs.io/en/stable/developers/index.html), with the Python bindings found specifically [here](https://omero.readthedocs.io/en/stable/developers/Python.html). The notebooks in this repository are meant to exemplify the use of that API in the context of the IDR, and the sort of queries that can be done. In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup> They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
 
 
 ## Running the notebooks
 
 ### Running on cloud resources
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IDR/idr-notebooks/master)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IDR/idr-notebooks/)
-
-### Running in Docker
-
-
-Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
-tool to run this repository as a local Docker instance:
-
-
-    $ git clone https://github.com/IDR/idr-notebooks
-    $ cd idr-notebooks
-    $ repo2docker .
-
-Then follow the instructions that are printed after the Docker image is built.
-Depending on the permissions, you might have to run the command as an admin
 
 
 ### Running locally
+**NOTE**: At the moment, running locally does not work.
+Please use the Google Colab workflow (see above).
 
-Finally, if you would like to install the necessary requirements locally,
+If you would like to install the necessary requirements locally,
 we suggest using conda:
 
 You can for example install Anaconda https://www.anaconda.com/products/individual#Downloads
@@ -71,5 +56,3 @@ The following steps are only required if you want to run the notebooks
 ----
 
 <a name="footnote1">1</a>: Available on bioRxiv under https://doi.org/10.1101/089359
-
-<a name="footnote2">2</a>: If you don't yet have [an account](Using_Jupyter.ipynb), notebooks can be viewed under https://github.com/IDR/idr-metadata or more completely under https://nbviewer.jupyter.org/github/idr/idr-notebooks/tree/master/
