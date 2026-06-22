@@ -1,29 +1,45 @@
-
-[![Actions Status](https://github.com/IDR/idr-notebooks/workflows/repo2docker/badge.svg)](https://github.com/ome/idr-notebooks/actions)
 # idr-notebooks
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IDR/idr-notebooks/master)
+A set of Python Notebooks to demonstrate how to access the images and metadata from the [Image Data Resource (IDR)](https://idr.openmicroscopy.org), including the features and all of the descriptive tags.
 
-A set of Python Notebooks to demonstrate how to access the images and metadata from the [Image Data Resource (IDR)](https://idr.openmicroscopy.org), including features and all descriptive tags.
+Full access to IDR metadata and images is provided through the standard OMERO API, documentation for which can be found [here](https://omero.readthedocs.io/en/stable/developers/index.html), with the Python bindings found specifically [here](https://omero.readthedocs.io/en/stable/developers/Python.html). The notebooks in this repository are meant to exemplify the use of that API in the context of the IDR, and the sort of queries that can be done. In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup> They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
 
-Full access to IDR metadata and images is provided through the standard OMERO API, documentation for which can be found [here](https://docs.openmicroscopy.org/latest/omero5.4/developers/index.html), with the Python bindings found specifically [here](https://docs.openmicroscopy.org/latest/omero5.4/developers/Python.html). The notebooks in this repository are meant to exemplify the use of that API in the context of the IDR, and the sort of queries that can be done. In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup> They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
 
-To run the notebooks, you can either [run on mybinder.org](https://mybinder.org/v2/gh/IDR/idr-notebooks/master) or build locally with [repo2docker](https://repo2docker.readthedocs.io/).
+## Running the notebooks
 
-To build locally:
+### Running on cloud resources
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IDR/idr-notebooks/)
 
- * Install [Docker](https://www.docker.com/) if required
- * Create a virtual environment and install repo2docker from PyPI.
- * Clone this repository
- * Run ``repo2docker``. 
- * Depending on the permissions, you might have to run the command as an admin
 
-```
-pip install jupyter-repo2docker
-git clone https://github.com/IDR/idr-notebooks.git
-cd idr-notebooks
-repo2docker .
-```
+### Running locally
+**NOTE**: At the moment, running locally does not work.
+Please use the Google Colab workflow (see above).
+
+If you would like to install the necessary requirements locally,
+we suggest using conda:
+
+You can for example install Anaconda https://www.anaconda.com/products/individual#Downloads
+
+Create an environment:
+
+    $ git clone https://github.com/IDR/idr-notebooks
+    $ cd idr-notebooks
+    $ conda env create -n idr_env -f binder/environment.yml
+
+and activate the newly created environment:
+
+    $ conda activate idr_env
+
+The following steps are only required if you want to run the notebooks
+
+* If you have Anaconda installed:
+  * Start Jupyter from the Anaconda-navigator
+  * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:idr_env]``
+* If Anaconda is not installed:
+  * In the environment, install ``jupyter`` e.g. ``pip install jupyter``
+  * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "idr_env" --user``
+  * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``idr_env`` kernel or ``[conda env:idr_env]`` according to what is available
+
 
 | **Notebook**                                                               | **Lang** | **Level**     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------|----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,5 +56,3 @@ repo2docker .
 ----
 
 <a name="footnote1">1</a>: Available on bioRxiv under https://doi.org/10.1101/089359
-
-<a name="footnote2">2</a>: If you don't yet have [an account](Using_Jupyter.ipynb), notebooks can be viewed under https://github.com/IDR/idr-metadata or more completely under https://nbviewer.jupyter.org/github/idr/idr-notebooks/tree/master/
