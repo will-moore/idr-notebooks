@@ -27,6 +27,10 @@ For reading pixel data from OME-Zarrs, we also need:
 
     $ pip install zarr aiohttp dask fsspec s3fs
 
+For Figure 2 GeneNetwork notebook, we need:
+
+    $ pip install networkx
+
 Then we can launch with:
 
     $ jupyter notebook
