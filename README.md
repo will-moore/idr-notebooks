@@ -27,7 +27,7 @@ Create an environment with dependencies:
 
     $ conda create -n jupyter_idr python=3.12
     $ conda activate jupyter_idr
-    $ pip install jupyterlab notebook
+    $ pip install jupyterlab notebook matplotlib pandas tiffile
 
 For reading pixel data from OME-Zarrs, we also need: 
 
