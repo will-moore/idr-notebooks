@@ -2,7 +2,7 @@
 
 A set of Python Notebooks to demonstrate how to access the images and metadata from the [Image Data Resource (IDR)](https://idr.openmicroscopy.org), including the features and all of the descriptive tags.
 
-The easiest way to access IDR metadata and images is via the OMERO Web-based API, which doesn't require a login. This primarily consists of the [JSON API](https://omero.readthedocs.io/en/stable/developers/json-api.html)
+The recommended way to access IDR metadata and images is via the OMERO Web-based API, which doesn't require a login. This primarily consists of the [JSON API](https://omero.readthedocs.io/en/stable/developers/json-api.html)
 and the [WebGateway](https://omero.readthedocs.io/en/stable/developers/Web/WebGateway.html).
 
 IDR is currently migrating to the [OME-Zarr](https://ngff.openmicroscopy.org/) image format. Many images have been converted to OME-Zarr, which are hosted on public object storage allowing scalable access
