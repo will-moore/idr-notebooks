@@ -7,8 +7,14 @@ and the [WebGateway](https://omero.readthedocs.io/en/stable/developers/Web/WebGa
 
 IDR is currently migrating to the [OME-Zarr](https://ngff.openmicroscopy.org/) image format. Many images have been converted to OME-Zarr, which are hosted on public object storage allowing scalable access
 to binary pixel data. Other images that have not yet been converted must be downloaded and read locally to access pixel data.
+The [IDR home page](https://idr.openmicroscopy.org/) indicates which studies have been converted to OME-Zarr. Only Images in that are in OME-Zarr format will be viewable in the main image viewer on IDR, and
+OME-Zarr Images can also be identified in the IDR webclient by the display of a "Zarr" button above the right panel which will display the Zarr URL (`External Info`).
 
-The notebooks in this repository are meant to exemplify the use of that API in the context of the IDR, and the sort of queries that can be done. In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup> They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
+The OMERO web API can be used to identify OME-Zarr Images by the presence of `External Info` annotation of the image, as described in the `IDR API example script` notebook below.
+
+The notebooks in this repository are meant to exemplify the use of the OMERO web API in the context of the IDR, and the sort of queries that can be done.
+In particular, they show how to reproduce Figure 1 and Figure 2 of the paper.<sup>[1](#footnote1)</sup>
+They also make use of the [scipy](https://www.scipy.org/) ecosystem, including [pandas](https://pandas.pydata.org).
 
 
 ## Running the notebooks locally
